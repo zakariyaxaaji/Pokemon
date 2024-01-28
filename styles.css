@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+@font-face {
+  font-family: Pokemon Hollow;
+  src: url(fonts/Pokemon\ Hollow.ttf);
+  font-family: Pokemon Solid;
+  src: url(fonts/Pokemon\ Solid.ttf);
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  font-family: Pokemon Solid;
+  letter-spacing: 4px;
+  background: rgb(59, 184, 166);
+  background: linear-gradient(
+    90deg,
+    rgba(59, 184, 166, 1) 14%,
+    rgba(43, 108, 144, 1) 35%,
+    rgba(111, 73, 122, 1) 54%,
+    rgba(82, 33, 136, 1) 86%,
+    rgba(157, 24, 111, 1) 100%,
+    rgba(27, 8, 96, 1) 100%
+  );
+  padding: 0.5rem;
+}
+.card {
+  text-align: center;
+  background-color: #4c94c4;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  border: solid 1px pink;
+  transition-property: transfrom;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in;
+}
+.card:hover {
+  transform: scale(1.2);
+}
