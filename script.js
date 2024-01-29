@@ -41,7 +41,7 @@ function displayPokemon(pokemon) {
       src="${poke.picture}"
       alt=" ${poke.name}'s image"
     />
-    <h2>${poke.name}</h2>
+    <h2>${poke.id} ${poke.name}</h2>
     <p>types: ${poke.types}</p>
     <p>weight: ${poke.weight}</p>
   </li>
